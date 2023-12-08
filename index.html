@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-COMMERCE </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Open+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Open+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <ul class="nav-links">
+            <li><a id="homeicon" href="#">Home</a></li>
+            <li><a id="Abouticon" href="#">About</a></li>
+            <li><a id="contacticon" href="#">Contact Us</a></li>
+        </ul>
+        <div class="icons">
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-user-tie"></i></a>
+            <a id="carticon" href=""><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+
+    <!-- -------------------------------------H O M E   S E C T I O N--------------------------------------------- -->
+
+
+    <div id="productContainer">
+
+    </div>
+
+    <section id="home">
+        <div class="slider">
+            <img src="./images/slid04.png" alt="Slide 1">
+            <img src="./images/Slid02-2.png" alt="Slide 2">
+            <img src="./images/Slid03-2.png" alt="Slide 3">
+            <img src="./images/img2.png" alt="Slide 4">
+            <button class="arrow arrow-left" onclick="prevSlide()">&#9665;</button>
+            <button class="arrow arrow-right" onclick="nextSlide()">&#9655;</button>
+        </div>
+
+        <div class="category-container">
+            <div class="tittle">
+                <h2 class="category-title">PRODUCTS CATEGORIES</h2>
+            </div>
+
+            <div class="category">
+                <div id="Hoodies" class="category-item ">Hoodies</div>
+                <div id="T_Shirts" class="category-item">T-Shirts</div>
+                <div id="Shoes" class="category-item">Shoes</div>
+            </div>
+        </div>
+
+        <div class="feature-products">
+            <div class="tittle">
+                <h2 class="category-title">FEATURED PRODUCTS</h2>
+            </div>
+            <div class="product-container">
+                <div class="product product-item" style="padding-bottom: 10px;">
+                    <div> <img src="./images/holiister hoddeie1.jpg" alt="Hoodie"></div>
+                    <div class="overlay">
+                        <h3>Description :</h3>
+                        <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing </p>
+                        <h3>price: 504$ </h3>
+
+                        <button class='button' onclick="addProduct(event)">Add to cart</button>
+
+                    </div>
+                </div>
+
+                <div class="product product-item" style="padding-bottom: 10px;">
+                    <div> <img src="./images/product-4.jpg" alt="Hoodie"></div>
+                    <div class="overlay">
+                        <h3>Description :</h3>
+                        <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing </p>
+                        <h3>price: 100$ </h3>
+                        <button class='button' onclick="addProduct(event)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product product-item" style="padding-bottom: 10px;">
+                    <div> <img src="./images/shoes1.jpg" alt="Hoodie"></div>
+                    <div class="overlay">
+                        <h3>Description :</h3>
+                        <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing </p>
+                        <h3>price: 803$ </h3>
+                        <button class='button' onclick="addProduct(event)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product product-item" style="padding-bottom: 10px;">
+                    <div> <img src="./images/ezgif.com-webp-to-jpg.jpg" alt="Hoodie"></div>
+                    <div class="overlay">
+                        <h3>Description :</h3>
+                        <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing </p>
+                        <h3>price: 502$ </h3>
+                        <button class='button' onclick="addProduct(event)">Add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div id="my_hoodies">
+
+            <div class="hoodies-products">
+                <div class="tittle">
+                    <h2 class="hoodeis-title">Hoodeis</h2>
+                </div>
+                <div class="product-container">
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/classic-hoodie-po-hd-ii-man-high-risk-red_71908_zoom.jpg" alt="Hoodie">
+                        </div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 500$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/ezgif.com-webp-to-jpg (1).jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 501$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/ezgif.com-webp-to-jpg.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 502$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/KIC_322-3131-1637-100_prod1.webp" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 503$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/holiister hoddeie1.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 504$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/holiister hoddeie2.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 505$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/holiister hoddeie3.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 506$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/holiister hoddeie4.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 507$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="my_tshirts">
+
+            <div class="tshirts-products">
+                <div class="tittle">
+                    <h2 class="tshirts-title">tshirts</h2>
+                </div>
+                <div class="product-container">
+
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/product-4.jpg" alt="Hoodie">
+                        </div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 100$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product product-item" style="padding-bottom: 10px;">
+
+                        <div> <img src="./images/product-6.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 101$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/t-2.jpeg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 102$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/tshirt1.webp" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 103$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/t3.jpeg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 104$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/t4.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 105$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/t6.webp" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 106$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/t5.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 107$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="my_shoes">
+
+            <div class="shoes-products">
+                <div class="tittle">
+                    <h2 class="shoes-title">shoes</h2>
+                </div>
+                <div class="product-container">
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/product-5.jpg" alt="Hoodie">
+                        </div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 800$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/product-11.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 801$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/product-10.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 802$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/shoes1.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 803$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/shoes2.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 804$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/shoes3.webp" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 807$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/shoes4.jpeg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 805$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product product-item" style="padding-bottom: 10px;">
+                        <div> <img src="./images/shoes6.jpg" alt="Hoodie"></div>
+                        <div class="overlay">
+                            <h3>Description :</h3>
+                            <p style="padding-left: 15px;padding-right: 15px;">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing </p>
+                            <h3>price: 806$ </h3>
+                            <button class='button' onclick="addProduct(event)">Add to cart</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------------------------------A B O U T   S E C T I O N--------------------------------------------- -->
+
+    <section id="about" style="display: none;">
+        <div class="about-section">
+            <div class="text-content">
+                <h2>About Us</h2>
+                <p>This is the story of our company...</p>
+                <h3>Who We Serve</h3>
+                <p>We serve a wide range of customers...</p>
+                <h3>How We Operate</h3>
+                <p>We operate by doing this and that...</p>
+
+            </div>
+            <img class="brands-photo" src="./images/Screenshot (68).png" alt="Our Team">
+        </div>
+    </section>
+
+    <!-- -------------------------------------C O N T A C T  S E C T I O N--------------------------------------------- -->
+
+
+    <section id="contact" style="display: none;">
+        <div id="contact-container">
+            <h1 id="contact-title">Contact Us</h1>
+            <p class="contact-sub-title">CONTACT US FOR ANY QUESTIONS</p>
+            <form id="contact-form">
+                <div>
+                    <input type="text" id="contact-name" placeholder="Your Name" class="contact-input" oninput="validateName()">
+                    <span id="name-error" style="color: red;"></span>
+                </div>
+                <div>
+                    <input type="email" id="contact-email" placeholder="Your Email" class="contact-input" oninput="validateEmail()">
+                    <span id="email-error" style="color: red;"></span>
+                </div>
+                <div>
+                    <input type="tel" id="contact-phone" placeholder="Your Phone" class="contact-input" oninput="validatePhone()">
+                    <span id="phone-error" style="color: red;"></span>
+                </div>
+                <div>
+                    <input type="text" id="contact-subject" placeholder="Subject" class="contact-input" oninput="validateSubject()">
+                    <span id="subject-error" style="color: red;"></span>
+                </div>
+                <div>
+                    <textarea id="contact-message" placeholder="Your Message" class="contact-textarea" oninput="validateMessage()"></textarea>
+                    <span id="message-error" style="color: red;"></span>
+                </div>
+                <button type="button" onclick="validateAndSubmit()" class="contact-button">Send</button>
+                
+            </form>
+        </div>
+    </section>
+   
+       
+
+
+    <footer  style="margin-top: 150px;">
+
+        <div id="containerFooter">
+
+            <div id="webFooter">
+
+                <h2> online store </h2>
+                <p> men clothing </p>
+                <p>Hoodies </p>
+                <p>t-shirts</p>
+                <p> shoes </p>
+            </div>
+            <div id="webFooter">
+                <h2> helpful link </h2>
+                <p> home </p>
+                <p> about </p>
+                <p> contact </p>
+            </div>
+            <div id="webFooter">
+                <h2> partners </h2>
+                <p> zara </p>
+                <p> pantaloons </p>
+                <p> levis </p>
+                <p> ucb </p>
+                <p> + many more </p>
+            </div>
+            <div id="webFooter">
+                <h2> address </h2>
+                <p> building 101 </p>
+                <p> central avenue </p>
+                <p> la - 902722 </p>
+                <p> united states </p>
+            </div>
+            <div id="scroll-to-top-btn" onclick="scrollToTop()">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+
+        </div>
+
+        <div id="credit">
+            <a href="https://facebook.com/your-facebook-profile" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <a href="https://twitter.com/your-twitter-profile" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <a href="https://instagram.com/your-instagram-profile" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <a href="https://tiktok.com/your-tiktok-profile" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <a href="https://pinterest.com/your-pinterest-profile" target="_blank">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="./js/demo.js"></script>
+</body>
+
+</html>
